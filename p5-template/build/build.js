@@ -75,6 +75,6 @@ function draw() {
     textSize(40);
     fill(0, 0, 255, 5);
     textAlign(CENTER);
-    text("Welcome to P5js 🚀", 1000, 500);
+    text("Welcome to P5js 🚀", width / 2, height / 2);
 }
 //# sourceMappingURL=build.js.map
