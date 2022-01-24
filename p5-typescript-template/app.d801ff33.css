@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #1c75d4;
+  color: white;
+  font-size: 24pt;
+  font-family: Verdana;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=/app.d801ff33.css.map */
