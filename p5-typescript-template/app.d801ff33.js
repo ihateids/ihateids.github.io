@@ -43965,48 +43965,50 @@ Object.defineProperty(exports, "__esModule", {
 
 var p5_1 = __importDefault(require("p5"));
 
-require("p5/lib/addons/p5.sound"); // import clm from 'clmtrackr'; // Include if needed
-// import ml5 from 'ml5'; // Include if needed
+require("p5/lib/addons/p5.sound"); // import clm from 'clmtrackr'; // Face tracking library
+// import ml5 from 'ml5'; // Machine learning library
 
 
 var sketch = function sketch(p) {
-  var _this = this;
+  var _this = this; // a hack to get loadSound working
 
-  var sound;
+
+  var loadSound = function loadSound(path) {
+    return p.loadSound(path);
+  };
+
+  var sound; // P5 will call this function to preload any assets (sounds, sprites, etc)
 
   p.preload = function () {
     return __awaiter(_this, void 0, void 0, function () {
-      var loadSound;
       return __generator(this, function (_a) {
-        loadSound = function loadSound(path) {
-          return p.loadSound(path);
-        };
-
         sound = loadSound("assets/ding.mp3");
         return [2
         /*return*/
         ];
       });
     });
-  };
+  }; // P5 will call this method after preload is finished
+
 
   p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight);
-    p.textAlign(p.CENTER);
     p.fill(0, 0, 100, 5);
     p.stroke("white");
     p.textAlign(p.CENTER);
     p.textSize(34);
     p.text("Use your mouse to draw something strange :)", p.windowWidth / 2, 150);
-    p.noStroke();
     sound.play();
-  };
+  }; // P5 will run this function whenever window is resized
+
 
   p.windowResized = function () {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
-  };
+  }; // P5 will call this method with animation frame defined with frameRate 
+
 
   p.draw = function () {
+    p.noStroke();
     var radius = 100;
 
     if (p.mouseIsPressed) {
@@ -44065,7 +44067,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61505" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60025" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
