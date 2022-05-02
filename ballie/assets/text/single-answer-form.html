@@ -1,0 +1,35 @@
+<style>
+input[type="text"] {
+  background: linear-gradient(top, #d6d7d7, #dee0e0);
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+  font-size:18px;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+
+.shadow {
+  background: #000;
+  border-radius: 12px 12px 4px 4px;
+  box-shadow: 0 0 20px 10px #000;
+  opacity: 0.2;
+  height: 12px;
+  margin: 30px auto;
+  width: 270px;
+}
+</style>
+
+<div class="answer">
+    <input type="text" autocomplete="off" placeholder="Your answer" id="answer" name="answer">
+</div>
+<div class="shadow"></div>
