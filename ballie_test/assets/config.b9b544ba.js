@@ -1,0 +1,1 @@
+const i=[{title:"Matrix",trainerType:"matrix",dataSrcId:"matrix"}],o=[{id:"matrix",src:"./matrix.json"},{id:"vocabulary",src:"./vocabulary.json",dataFilter:t}];function t(r){var a;return((a=r.isFromLesson)==null?void 0:a.toLowerCase())==="x"}export{o as data,i as game,t as vocabularyFilter};
