@@ -1,0 +1,1 @@
+const i=[{title:"Spusti\u0165 hru :)",titleY:90,titleX:1250,trainerType:"matrix",dataSrcId:"matrix"}],e=[{id:"matrix",src:"./matrix.json",dataFilter:r}];function r(a){var t;return((t=a.Naucit)==null?void 0:t.toLowerCase())==="x"}const n={backgroundImage:"./background.png"};export{e as data,i as game,r as matrixFilter,n as style};

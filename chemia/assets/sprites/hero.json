@@ -1,0 +1,14 @@
+{ "frames":
+[
+  { "filename": "walk1", "frame": {"x": 82, "y": 31, "w": 136, "h": 147 }},
+  { "filename": "fly1", "frame": {"x": 234, "y": 1, "w": 134, "h": 147 }},
+  { "filename": "walk2", "frame": {"x": 387, "y": 22, "w": 129, "h": 155 }},
+  { "filename": "jump1", "frame": {"x": 1, "y": 200, "w": 129, "h": 176 }},
+  { "filename": "jump2", "frame": {"x": 140, "y": 224, "w": 151, "h": 152 }},
+  { "filename": "jump3", "frame": {"x": 301, "y": 215, "w": 128, "h": 160 }},
+  { "filename": "fall1", "frame": {"x": 434, "y": 200, "w": 163, "h": 176 }},
+  { "filename": "die1", "frame": {"x": 53, "y": 401, "w": 126, "h": 144 }},
+  { "filename": "die2", "frame": {"x": 190, "y": 425, "w": 180, "h": 120 }},
+  { "filename": "die3", "frame": {"x": 377, "y": 463, "w": 168, "h": 82 }}
+]
+}
